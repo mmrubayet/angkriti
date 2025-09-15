@@ -1,0 +1,12 @@
+# OS junk
+Thumbs.db
+*.swp
+*.swo
+
+# vs code files
+.DS_Store
+.vscode/
+.history/
+
+# pycharm files
+.idea/
