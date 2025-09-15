@@ -1,0 +1,72 @@
+:root{
+    --bg: #ffffff;
+    --ink: #0b1220;
+    --muted: #69707a;
+    --accent: #0b1220;
+    --maxw: 900px;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+  
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+    width: 100%;
+    max-width: var(--maxw);
+    text-align: center;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.logo {
+    width: 50%; /* 1/6 of the width */
+    height: auto;
+    display: block;
+    margin-bottom: 12px; /* Add spacing below the logo */
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.content h2 {
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+.site-footer {
+    margin-top: 26px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* responsive tweaks */
+@media (max-width: 420px) {
+    .logo{
+        width: 56px;
+    }
+}
